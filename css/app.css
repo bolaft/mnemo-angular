@@ -1,0 +1,78 @@
+form {
+	padding: 20px;
+	text-align: center;
+}
+
+input {
+	margin: 10px;
+	z-index: 10;
+}
+
+div::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+.page > h3 {
+	text-align: center;
+	color: white;
+	padding: 5%;
+}
+
+.flashcard {
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	margin: 6em 12em 6em 12em;
+	color: black;
+	padding: 3em;
+	display: block;
+}
+
+.flashcards {
+	text-align: center;
+}
+
+.cbp-ig-grid li.deck.active > a {
+	background-color: #72CCA7;
+	color: #E25C5C;
+}
+
+.cbp-ig-grid li.deck.active > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li.deck.active > a:hover .cbp-ig-title {
+	color: #E25C5C;
+}
+
+.side-menu {
+	cursor: default;
+	display: none;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.intro-content {
+	cursor: default;
+}
+
+.hover-intro-content {
+	cursor: pointer;
+}
+
+/* grid item */
+.cbp-ig-grid li.online-deck:hover {
+	background: black;
+}
+
+.online-deck {
+	text-transform: capitalize;
+}
+
+.catalog-message {
+	height: 20px;
+}
+
+.suggestions {
+	padding: 20px;
+	font-style: italic;
+}

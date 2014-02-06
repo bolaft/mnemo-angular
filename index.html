@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" ng-app="mnemo">
+
+<head>
+    <meta charset="utf-8">
+
+    <title ng-bind-template="{{'Mnemo'}}">Mnemo</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/button.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+
+<body ng-controller="MainController">
+    <div class="container">
+        <div id="splitlayout" class="splitlayout">
+            <div class="intro">
+                <div class="side side-left">
+                    <header class="leftheader clearfix">
+                        <span>{{"Atal&reg;"}}</span>
+                        <h1>{{"Mnemo"}}</h1>
+                    </header>
+                    <div class="intro-content">
+                        <span class="hover-intro-content">
+                            <div class="profile" style="background-color:white">
+                                <img src="img/cards.png" alt="{{" Study! "}}!">
+                            </div>
+                            <h1>
+                                <span>{{"Study!"}}</span>
+                                <span>
+                                    <!-- "n cards left" -->
+                                </span>
+                            </h1>
+                        </span>
+                        <div class="left-menu side-menu">
+                            <h2>
+                                <!-- active deck names -->
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- /intro-contents -->
+                    <div class="overlay"></div>
+                </div>
+                <!-- /side-left -->
+                <div class="side side-right">
+                    <div class="intro-content">
+                        <span class="hover-intro-content">
+                            <nav class="profile">
+                                <img src="img/decks.png" alt="Decks">
+                            </nav>
+                            <h1>
+                                <span>{{"Decks"}}</span>
+                                <span>
+                                    <!-- "n decks available" -->
+                                </span>
+                            </h1>
+                        </span>
+                        <nav class="right-menu side-menu">
+                            <a class="md-trigger button" data-modal="" href="#">{{"Download decks"}}</a>
+                            <a class="md-trigger button" data-modal="" href="#">{{"Deck editor"}}</a>
+                        </nav>
+                    </div>
+                    <!-- /intro-contents -->
+                    <div class="overlay"></div>
+                </div>
+                <!-- /side-right -->
+            </div>
+            <!-- /intro -->
+            <div class="page page-right">
+                <h3 ng-show="localDecks.length == 0">{{"No deck available"}}</h3>
+                <div>
+                    <ul class="cbp-ig-grid decks">
+                        <!-- generated decks go there -->
+                    </ul>
+                </div>
+            </div>
+            <!-- /page-right -->
+            <div class="page page-left">
+                <h3 ng-show="activeDecks.length == 0">{{"No active deck"}}</h3>
+                <h3>
+                    <!-- flashcard deck name -->
+                </h3>
+                <div class="flashcards">
+                    <!-- generated flashcards go there -->
+                </div>
+            </div>
+            <!-- /page-left -->
+            <a href="#" class="back back-right" title="back">&rarr;</a>
+            <a href="#" class="back back-left" title="back">&larr;</a>
+        </div>
+        <!-- /splitlayout -->
+    </div>
+    <!-- /container -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/modernizr/modernizr.custom.js"></script>
+    <script src="lib/bonzo/classie.js"></script>
+    <script src="lib/codrops/cbpSplitLayout.js"></script>
+    <!-- <script src="lib/codrops/modalEffects.js"></script> -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+</body>
+
+</html>

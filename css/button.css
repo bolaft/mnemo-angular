@@ -1,0 +1,23 @@
+button, .button {
+  border: none;
+  padding: 0.6em 1.2em;
+  background: #DA5656;
+  color: #fff;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 2px;
+}
+
+button:hover, .button:hover {
+  background: #723836;
+  color: white;
+}
+
+.button.small-button {
+  font-size: 0.5em;
+}
