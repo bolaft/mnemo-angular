@@ -1,0 +1,1 @@
+requires https://github.com/rogerwang/node-webkit for desktop app https://github.com/mllrsohn/grunt-node-webkit-builder for packaging
