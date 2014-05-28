@@ -1,0 +1,19 @@
+{
+	"name": "mnemo",
+	"main": "index.html",
+	"description": "SRT/flashcard learning tool",
+	"version": "0.0.1",
+	"keywords": [ "mnemo", "SRT", "flashcard"],
+	"window": {
+		"title": "Mnemo",
+		"icon": "icon.png",
+		"toolbar": false,
+		"frame": true,
+		"width": 800,
+		"show": true,
+		"height": 600,
+		"position": "mouse",
+		"min_width": 400,
+		"min_height": 200
+	}
+}
